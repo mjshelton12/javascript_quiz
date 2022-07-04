@@ -8,7 +8,7 @@ section {
     justify-content: center;
 }
 
-.quiz_box {
+#quiz_box {
     background-color: #70161E;
     height: 30rem;
     width: 40rem;
@@ -17,6 +17,43 @@ section {
     border-color: #C3D898;
     border-width: .5rem;
     margin-top: 5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header {
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(210, 189, 164);
+}
+
+.quiz_el {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1rem;
+    color: rgb(190, 161, 125);
+}
+
+#timer {
+    width: 100%;
+    height: 1.5rem;
+    margin-top: 0rem;
+}
+
+#left_box {
+    width: 50%;
+    height: 25rem;
+    padding: 1rem;
+}
+
+#right_box {
+    width: 50%;
+    height: 25rem;
+    padding: 1rem;
 }
 
 @media screen and (min-width: 1px) and (max-width: 800px) {
