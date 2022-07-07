@@ -1,8 +1,8 @@
-var quizEl = document.querySelector('.quiz_el')
+var quizEl = document.querySelector('.quiz-el')
 var header = document.getElementById('header')
 var timer = document.getElementById('timer')
-var leftBox = document.getElementById('left_box')
-var rightBox = document.getElementById('right_box')
+var leftBox = document.getElementById('left-box')
+var rightBox = document.getElementById('right-box')
 
 var startBtn = document.createElement("button")
 var againBtn = document.createElement("button")
@@ -38,7 +38,7 @@ var leaders = []
 
 var leaderArray = [
     {
-        score: "100",
+        score: "3",
         initials: "MJS",
     }
 ]
@@ -112,54 +112,46 @@ function questionsOne(){
 
     var choiceOne = document.createElement("button");
     choiceOne.textContent = "{"
-    choiceOne.classList = "choice_buttons"
+    choiceOne.classList = "choice-buttons"
     rightBox.appendChild(choiceOne)
 
     var choiceTwo = document.createElement("button");
     choiceTwo.textContent = "("
-    choiceTwo.classList = "choice_buttons"
+    choiceTwo.classList = "choice-buttons"
     rightBox.appendChild(choiceTwo)
 
     var choiceThree = document.createElement("button");
     choiceThree.textContent = "["
-    choiceThree.classList = "choice_buttons"
+    choiceThree.classList = "choice-buttons"
     rightBox.appendChild(choiceThree)
 
     var choiceFour = document.createElement("button");
     choiceFour.textContent = "|"
-    choiceFour.classList = "choice_buttons"
+    choiceFour.classList = "choice-buttons"
     rightBox.appendChild(choiceFour)
 
     choiceOne.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             questionsTwo()
-            console.log(score)
     })
 
     choiceTwo.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             questionsTwo()
-            console.log(score)
     })
 
     choiceThree.addEventListener("click", function(event) {
         var element = event.target;
             score++
-            console.log("correct")
             questionsTwo()
-            console.log(score)
     })
 
      choiceFour.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             questionsTwo()
-            console.log(score)
     })
 }
 
@@ -174,54 +166,46 @@ function questionsTwo(){
 
     var choiceOne = document.createElement("button");
     choiceOne.textContent = "var"
-    choiceOne.classList = "choice_buttons"
+    choiceOne.classList = "choice-buttons"
     rightBox.appendChild(choiceOne)
 
     var choiceTwo = document.createElement("button");
     choiceTwo.textContent = "if"
-    choiceTwo.classList = "choice_buttons"
+    choiceTwo.classList = "choice-buttons"
     rightBox.appendChild(choiceTwo)
 
     var choiceThree = document.createElement("button");
     choiceThree.textContent = "let"
-    choiceThree.classList = "choice_buttons"
+    choiceThree.classList = "choice-buttons"
     rightBox.appendChild(choiceThree)
 
     var choiceFour = document.createElement("button");
     choiceFour.textContent = "const"
-    choiceFour.classList = "choice_buttons"
+    choiceFour.classList = "choice-buttons"
     rightBox.appendChild(choiceFour)
 
     choiceOne.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             questionsThree()
-            console.log(score)
     })
 
     choiceTwo.addEventListener("click", function(event) {
         var element = event.target;
             score++
-            console.log("correct")
             questionsThree()
-            console.log(score)
     })
 
     choiceThree.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             questionsThree()
-            console.log(score)
     })
 
      choiceFour.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             questionsThree()
-            console.log(score)
     })
 }
 
@@ -236,54 +220,46 @@ function questionsThree(){
 
     var choiceOne = document.createElement("button");
     choiceOne.textContent = "Create a timer"
-    choiceOne.classList = "choice_buttons"
+    choiceOne.classList = "choice-buttons"
     rightBox.appendChild(choiceOne)
 
     var choiceTwo = document.createElement("button");
     choiceTwo.textContent = "Drive a videogame"
-    choiceTwo.classList = "choice_buttons"
+    choiceTwo.classList = "choice-buttons"
     rightBox.appendChild(choiceTwo)
 
     var choiceThree = document.createElement("button");
     choiceThree.textContent = "Solve a math problem"
-    choiceThree.classList = "choice_buttons"
+    choiceThree.classList = "choice-buttons"
     rightBox.appendChild(choiceThree)
 
     var choiceFour = document.createElement("button");
     choiceFour.textContent = "Walk a dog"
-    choiceFour.classList = "choice_buttons"
+    choiceFour.classList = "choice-buttons"
     rightBox.appendChild(choiceFour)
 
     choiceOne.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             gameOver()
-            console.log(score)
     })
 
     choiceTwo.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             gameOver()
-            console.log(score)
     })
 
     choiceThree.addEventListener("click", function(event) {
         var element = event.target;
             secondsLeft -= 5
-            console.log("too bad")
             gameOver()
-            console.log(score)
     })
 
      choiceFour.addEventListener("click", function(event) {
         var element = event.target;
             score++
-            console.log("correct")
             gameOver()
-            console.log(score)
     })
 }
 
@@ -297,11 +273,9 @@ function gameOver() {
 
     rightBox.textContent = "";
 
-    // rightBox.textContent = "Leaderboard";
-
     var leaderPrompt = document.createElement("p")
     leaderPrompt.textContent = "Write in your initials to join the leader board!"
-    leaderPrompt.classList = "leader_prompt"
+    leaderPrompt.classList = "leader-prompt"
     leftBox.appendChild(leaderPrompt)
 
     var leaderInput = document.createElement("input")
@@ -312,14 +286,14 @@ function gameOver() {
 
     var leaderButton = document.createElement("button")
     leaderButton.textContent = "Submit"
-    leaderButton.classList = "choice_buttons"
+    leaderButton.classList = "choice-buttons"
     leftBox.appendChild(leaderButton)
 
     againBtn.textContent = "Go Again?"
     // againBtn.style.marginTop = "12rem"
     againBtn.style.padding = ".1rem"
     againBtn.style.backgroundColor = "#7EA16B"
-    againBtn.classList = "choice_buttons"
+    againBtn.classList = "choice-buttons"
     leftBox.appendChild(againBtn)
 
     var leaderBox = document.createElement("h1")
@@ -328,7 +302,7 @@ function gameOver() {
 
     var lastLeader = JSON.parse(localStorage.getItem("leaders"));
 
-    for (let i = 0; i < lastLeader.length; i++) {
+    for (let i = 0; i < lastLeader.length && i < 5; i++) {
         var leaderBox = document.createElement("h1")
         leaderBox.textContent = lastLeader[i].initials + ": " + lastLeader[i].score
         leaderBox.classList = "leaderboard"
@@ -352,15 +326,11 @@ function gameOver() {
 
         leaderArray.unshift(leaderObject)
 
-        console.log(leaderArray)
-
         localStorage.setItem("leader", JSON.stringify(leaderObject))
 
         localStorage.setItem("leaders", JSON.stringify(leaderArray))
 
         leaderInput.value = ""
-
-        console.log(leaderObject)
 
         var lastLeader = JSON.parse(localStorage.getItem("leaders"));
 
@@ -370,6 +340,12 @@ function gameOver() {
             leaderBox.classList = "leaderboard"
             rightBox.appendChild(leaderBox)
         }
+
+        leaderInput.setAttribute("type", "hidden")
+
+        leaderButton.style.visibility = 'hidden'
+
+        leaderPrompt.textContent = "Welcome to the leaderboard!"
 
       });
 

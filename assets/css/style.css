@@ -8,7 +8,7 @@ section {
     justify-content: center;
 }
 
-#quiz_box {
+#quiz-box {
     background-color: #70161E;
     height: 30rem;
     width: 40rem;
@@ -32,7 +32,7 @@ section {
     color: rgb(210, 189, 164);
 }
 
-.quiz_el {
+.quiz-el {
     font-family:'Times New Roman', Times, serif;
     font-size: 1rem;
     color: rgb(190, 161, 125);
@@ -44,13 +44,13 @@ section {
     margin-top: 0rem;
 }
 
-#left_box {
+#left-box {
     width: 50%;
     height: 25rem;
     padding: 1rem;
 }
 
-#right_box {
+#right-box {
     width: 50%;
     height: 25rem;
     padding: 1rem;
@@ -58,7 +58,7 @@ section {
     justify-content: center;
 }
 
-.choice_buttons {
+.choice-buttons {
     font-size: 1rem;
     background-color: #7EA16B;
     width: 10rem;
@@ -71,7 +71,7 @@ section {
     margin: 2rem;
 }
 
-.leader_prompt{
+.leader-prompt{
    font-size: 1.5rem;
    margin-top: -4rem; 
 }
