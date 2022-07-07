@@ -54,11 +54,30 @@ section {
     width: 50%;
     height: 25rem;
     padding: 1rem;
+    text-align: center;
+    justify-content: center;
 }
 
-@media screen and (min-width: 1px) and (max-width: 800px) {
-    .quiz_box {
-        height: 40rem;
-        width: 30rem;
-    }
+.choice_buttons {
+    font-size: 1rem;
+    background-color: #7EA16B;
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+}
+
+.leader-input {
+    width: 50%;
+    margin: 2rem;
+}
+
+.leader_prompt{
+   font-size: 1.5rem;
+   margin-top: -4rem; 
+}
+
+
+.leaderboard{
+    font-size: 1.5rem;
+    font-style: normal;
 }
