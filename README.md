@@ -1,6 +1,5 @@
 # javascript_quiz
 
-
 ## Technologies Used
 
 * HTML - Used to build the basic frame of the site
